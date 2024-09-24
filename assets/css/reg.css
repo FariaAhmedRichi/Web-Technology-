@@ -14,7 +14,7 @@ body {
 
 /* Style for the form */
 form {
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  background-color: rgba(215, 194, 194, 0.8); /* Semi-transparent background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@ form {
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: #2a2525;
 }
 
 /* Style for input fields */
@@ -41,9 +41,18 @@ input[type="date"] {
   box-sizing: border-box;
 }
 
+/* Label styling */
+label {
+  font-size: 16px;
+  color: #332f2f; /* Light text color for visibility */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* To make the labels stand out */
+}
+
 /* Style for radio buttons */
 input[type="radio"] {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* Style for the submit button */
