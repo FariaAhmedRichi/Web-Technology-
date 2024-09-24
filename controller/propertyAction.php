@@ -1,23 +1,32 @@
 <?php
-require '../model/db.php'; // Include your database connection file
+session_start(); // Start the session
 
 if (isset($_POST['submit'])) {
-    // Retrieve the form data
-    $title = $_POST['title'];
-    $description = $_POST['description'];
-    $price = $_POST['price'];
-    $location = $_POST['location'];
-    $property_type = $_POST['property_type'];
+    // Retrieve form data
+    $title = htmlspecialchars($_POST['title']);
+    $description = htmlspecialchars($_POST['description']);
+    $price = htmlspecialchars($_POST['price']);
+    $location = htmlspecialchars($_POST['location']);
+    $property_type = htmlspecialchars($_POST['property_type']);
 
-    // Prepare the SQL query to insert the property listing
-    $query = "INSERT INTO property_list (title, description, price, location, property_type) 
-              VALUES ('$title', '$description', '$price', '$location', '$property_type')";
+    // Create a property array
+    $property = [
+        'title' => $title,
+        'description' => $description,
+        'price' => $price,
+        'location' => $location,
+        'property_type' => $property_type,
+        'image' => 'path/to/image.jpg' // Placeholder for image path
+    ];
 
-    // Execute the query
-    if (mysqli_query($conn, $query)) {
-        echo "Property listed successfully!";
-    } else {
-        echo "Error: " . mysqli_error($conn);
+    // Store the property in session based on property type
+    if (!isset($_SESSION['properties'])) {
+        $_SESSION['properties'] = [];
     }
+    $_SESSION['properties'][$property_type][] = $property;
+
+    // Redirect back to the property listing page
+    header("Location: ../view/propertyList.php");
+    exit();
 }
 ?>
