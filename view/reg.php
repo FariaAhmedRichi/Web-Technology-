@@ -12,16 +12,27 @@
 <script src="../assets/js/reg.js"></script>
  <form method='post' action='../controller/regAction.php'>
         <fieldset>
-            <h2>Registration</h2>
-            Name : <input type="text" name="name" required><br><br>
-            Email :<input type="email" name="email" required><br><br>
-            Gender: <input type="radio" name="gender" id="male">Male
-                    <input type="radio" name="gender" id="female">Female<br><br>
-            DOB : <input type="date" name="dob" required><br><br>
-            Password : <input type="password" name="password" required><br><br>
-            Confirm password : <input type="password" name="re_password" required><br><br>
-            User type: <input type="text" name="user_type" required><br>
-            <input type="submit" value="Submit" name="submit"><br><br>
+        <h2>Registration</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        Gender: <input type="radio" name="gender" id="male">Male
+        <input type="radio" name="gender" id="female">Female<br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="re_password">Confirm Password:</label>
+        <input type="password" name="re_password" id="re_password" required>
+
+        <label for="user_type">User Type:</label>
+        <input type="text" name="user_type" id="user_type" required>
+    
+
+        <input type="submit" value="Submit" name="submit">
             
 </fieldset>
 </form>
