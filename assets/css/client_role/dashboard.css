@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Style the section with nav and article */
+  section {
+    display: flex;
+    padding: 20px;
+  }
+  /* Style the navigation */
+  nav {
+    width: 25%;
+    background-color: #ccc;
+    padding: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  nav ul li a:hover {
+    background-color: #bbb;
+  }
+  /* Style the article */
+  article {
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .message {
+    color: red;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .photo {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .gallery .photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  footer {
+    background-color: #777;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  /* Responsive layout - stack nav and article on top of each other on small screens */
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+    nav, article {
+      width: 100%;
+    }
+  }

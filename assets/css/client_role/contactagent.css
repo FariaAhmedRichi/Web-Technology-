@@ -1,0 +1,93 @@
+/* Style for the entire body */
+body {
+    background-image: url('download.jpg'); /* Replace with your login background image */
+    background-color: #f4f4f4; /* Light background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 0;
+    text-align: center; /* Centered text */
+}
+
+/* Style for the form section */
+section {
+    display: flex;
+    justify-content: center; /* Center the form */
+    align-items: center;
+    height: 80vh; /* 80% of the viewport height */
+}
+
+/* Style for the form */
+form {
+    background-color: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+}
+
+/* Style for fieldset */
+fieldset {
+    border: none; /* Remove default border */
+}
+
+/* Style for the legend */
+legend {
+    font-size: 24px; /* Larger font for the legend */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Spacing below legend */
+}
+
+/* Style for labels */
+label {
+    font-size: 16px; /* Font size for labels */
+    color: #333; /* Darker text color */
+    display: block; /* Labels on separate lines */
+    margin: 10px 0 5px; /* Margins around labels */
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for the textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style for footer */
+footer {
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding above and below */
+    background-color: #f1f1f1; /* Light gray background */
+}
