@@ -9,7 +9,7 @@ $property_type = 'apartment'; // Change this according to the type you want to d
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo ucfirst($property_type); ?> Listings</title>
-    <link rel="stylesheet" href="../assets/css/propertyList.css"> 
+    <link rel="stylesheet" href="../assets/css/propertyType.css"> 
 </head>
 <body>
 
@@ -20,10 +20,10 @@ $property_type = 'apartment'; // Change this according to the type you want to d
 <section>
     <nav>
         <ul>
-            <li><a href="propertyType.php">Property Type 1</a></li>
-            <li><a href="propertyType.php">Property Type 2</a></li>
-            <li><a href="propertyType.php">Property Type 3</a></li>
-            <li><a href="propertyType.php">Property Type 4</a></li>
+            <li><a href="../view/propertyType.php?type=apartment">Property Type 1 (Apartment)</a></li>
+            <li><a href="../view/propertyType.php?type=house">Property Type 2 (House)</a></li>
+            <li><a href="../view/propertyType.php?type=condo">Property Type 3 (Condo)</a></li>
+            <li><a href="../view/propertyType.php?type=land">Property Type 4 (Land)</a></li>
         </ul>
     </nav>
 
@@ -37,7 +37,7 @@ $property_type = 'apartment'; // Change this according to the type you want to d
                 echo "<p><strong>Description:</strong> " . htmlspecialchars($property['description']) . "</p>";
                 echo "<p><strong>Price:</strong> $" . htmlspecialchars($property['price']) . "</p>";
                 echo "<p><strong>Location:</strong> " . htmlspecialchars($property['location']) . "</p>";
-                echo "<img src='" . $property['image'] . "' alt='Property Image' style='width:200px;height:auto;'>";
+                echo "<img src='" . htmlspecialchars($property['image']) . "' alt='Property Image' style='width:200px;height:auto;'>";
                 echo "</div>";
             }
         } else {
