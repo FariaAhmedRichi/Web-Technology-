@@ -24,8 +24,8 @@
 </nav>
 
     
-    <article>
-    <form method="post" action="../controller/propertyAction.php"> 
+<article>
+    <form method="post" action="../controller/propertyAction.php" enctype="multipart/form-data"> 
         <fieldset>
             <h2>Property Listing</h2>
             
@@ -49,10 +49,14 @@
                 <option value="land">Land</option>
             </select>
 
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+
             <input type="submit" value="List Property" name="submit">
         </fieldset>
     </form>
 </article>
+
 
 </section>
 
