@@ -1,10 +1,10 @@
-# 🏠 Online Real Estate Management System
+# 🏠 Real Estate Management System
 
 An interactive web application for buying, booking, and paying for real estate properties online. The system allows users to browse properties across various categories, check pricing and location details, book properties, and make secure, transparent payments.
 
 ## 🚀 Features
 
-**Property Listings** — Browse real estate properties across multiple categories (apartments, land, )  
+**Property Listings** — Browse real estate properties across multiple categories (apartments, house, condo, land, etc)  
 **Detailed Views** — View property pricing, location maps, and specifications  
 **Booking System** — Book desired properties directly through the platform  
 **Secure Payment** — Make online payments with transparent transactions  
